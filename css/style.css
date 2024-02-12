@@ -23,6 +23,8 @@
   min-width: 485px;
   height: 100vh;
   background-image: url(../img/bg-main-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .right_side {
   width: 100%;
