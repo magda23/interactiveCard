@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdviceGenerator</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main_block d-flex align-items-center justify-content-center">
+        <div class="left_side position-relative">
+          <div class="front_card position-absolute">
+            <div class="card_img position-relative">
+              <img src="img/bg_card_front.png" alt="card_front" />
+              <div class="card_front_info position-absolute">
+                <div class="circle_img">
+                  <img src="img/circles.svg" alt="" />
+                </div>
+                <div class="card_numbers">0000 0000 0000 0000</div>
+                <div
+                  class="card_holder_info d-flex align-items-center justify-content-between"
+                >
+                  <div class="card_holder">JANE APPLESEED</div>
+                  <div class="expire_date">
+                    <span class="expire_month">00</span>/<span
+                      class="expire_year"
+                      >00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="back_card position-absolute">
+            <div class="card_back_info position-relative">
+              <img src="img/bg_card_back.png" alt="card_back" />
+              <div class="cvc_code position-absolute">000</div>
+            </div>
+          </div>
+        </div>
+        <div class="right_side">
+          <form class="card_form">
+            <div class="card_info d-flex flex-column">
+              <label>Cardholder Name</label>
+              <input
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                class="input_item card_holder_input"
+              />
+              <div class="name_error_message error_message"></div>
+            </div>
+            <div class="card_info d-flex flex-column">
+              <label>Card Number</label>
+              <input
+                type="text"
+                placeholder="e.g. 1234 5678 9123 0000"
+                class="input_item card_number_input"
+              />
+              <div class="number_error_message error_message"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="date_item d-flex flex-column">
+                <label> Exp. Date (MM/YY)</label>
+                <div
+                  class="card_info expire_item d-flex justify-content-between"
+                >
+                  <input
+                    type="text"
+                    placeholder="MM"
+                    class="input_item month_input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="YY"
+                    class="input_item year_input"
+                  />
+                </div>
+                <div class="expire_error_message error_message"></div>
+              </div>
+              <div class="cvc_input d-flex flex-column">
+                <label>CVC</label>
+                <input
+                  type="text"
+                  placeholder="e.g. 123"
+                  class="input_item cvc_code_input"
+                />
+                <div class="cvc_error_message error_message"></div>
+              </div>
+            </div>
+            <button class="confirm_btn">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
